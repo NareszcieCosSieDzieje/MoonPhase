@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <RadioGroup
+        android:id="@+id/hemisphereRadioGroup"
+        android:layout_width="335dp"
+        android:layout_height="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="120dp">
+
+        <TextView
+            android:id="@+id/hemisphereTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz obaz półkuli księżyca" />
+
+        <RadioButton
+            android:id="@+id/northRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Północna" />
+
+        <RadioButton
+            android:id="@+id/southRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Południowa" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/algorithmRadioGroup"
+        android:layout_width="332dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hemisphereRadioGroup">
+
+        <TextView
+            android:id="@+id/algorithmTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz algorytm" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSimple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prosty" />
+
+        <RadioButton
+            android:id="@+id/radioButtonConway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conway'a" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTrig1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trygonometryczny 1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTrig2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trygonometryczny 2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToMainActivity"
+        android:text="Powrót"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

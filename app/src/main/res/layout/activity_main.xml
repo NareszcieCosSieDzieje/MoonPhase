@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/afterTextView"
+        android:layout_width="186dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percentageTextView" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Date: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moonImageView" />
+
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Wybierz datę"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTextView" />
+
+    <ImageView
+        android:id="@+id/moonImageView"
+        android:layout_width="239dp"
+        android:layout_height="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hemiTextView"
+        tools:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/moonPhaseLabel"
+        android:layout_width="93dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Fazy Księżyca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToSettings"
+        android:text="Ustawienia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/percentageTextView"
+        android:layout_width="138dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Dzisiaj: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateButton" />
+
+    <TextView
+        android:id="@+id/hemiTextView"
+        android:layout_width="369dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moonPhaseLabel" />
+
+    <TextView
+        android:id="@+id/algoTextView"
+        android:layout_width="333dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="Uzywany algorytm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fullMoonButton"
+        android:layout_width="97dp"
+        android:layout_height="56dp"
+        android:onClick="goToYearActivity"
+        android:text="Pełnie w roku"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/beforeTextView"
+        android:layout_width="186dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/afterTextView"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percentageTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
