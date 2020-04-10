@@ -21,7 +21,6 @@ import java.lang.Math.abs
 import kotlin.math.round
 
 
-//TODO na podstawie pliku ustaw radiobutton !
 
 class MainActivity : AppCompatActivity() {
 
